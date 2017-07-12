@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="hibernatetest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="classification"/>
+    <schema id="4" parent="1" name="gtb"/>
+    <schema id="5" parent="1" name="hibernatetestdb"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="spring_security_app"/>
+    <schema id="10" parent="1" name="students"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="tutorialsdb"/>
+    <table id="13" parent="2" name="employee"/>
+    <table id="14" parent="2" name="hibernate_sequence"/>
+    <column id="15" parent="13" name="ID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="13" name="EMAIL">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="17" parent="13" name="FIRST_NAME">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="13" name="LAST_NAME">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="19" parent="13" name="UK_m30joy0i68j6kajwwne0tf9of">
+      <ColNames>EMAIL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="21" parent="13" name="UK_m30joy0i68j6kajwwne0tf9of">
+      <ColNames>EMAIL</ColNames>
+      <UnderlyingIndexName>UK_m30joy0i68j6kajwwne0tf9of</UnderlyingIndexName>
+    </key>
+    <column id="22" parent="14" name="next_val">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
